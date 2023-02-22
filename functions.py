@@ -9,3 +9,6 @@ def isitPrime(k):
             return False
 
     return True
+    
+def restar(x,y):
+    return x-y
