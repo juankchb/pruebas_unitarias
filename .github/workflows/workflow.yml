@@ -16,10 +16,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4 
         with:
           python-version: 'pypy3.9'
+      - name: Creat virtualenv and activate
+        run: 
+          virtualenv env
+          source env/bin/activate
+          
